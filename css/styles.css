@@ -1,0 +1,89 @@
+:root{
+  --title-text-color: #212121;
+  --primary-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+ }
+/* цвет основного текста #212121  */
+/* доп цвет #757575 */
+/* цвет акцент  #2196F3 */
+/* цвет фона #ffffff */
+.list {list-style: none;}
+
+.body {
+background-color: var(--primary-bg-color)  
+;}
+
+/* логотип  */
+.logo{
+    color: var(--title-text-color); }  
+
+.logo span{
+    color: var(--accent-color);}
+    .logo:focus, .logo:hover {
+        color: var(--accent-color);
+    }
+ /* ссылки в шапке сайта   */
+ .site-nav .link {
+     color: var(--title-text-color);
+ }
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+color: var(--accent-color);
+}
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+
+ /* Почта и телефон */
+ .tel-mail-link{
+color: var(--primary-text-color);
+ }
+.tel-mail-link:hover, .tel-mail-link:focus{
+    color: var(--accent-color); }
+    
+     /*-------------------------- Основной контент------------------------- */
+/* Герой  */
+.hero{
+    color: var(--title-text-color);
+}
+/* секции */
+.section-title{
+    color: var(--title-text-color);
+}
+/* кнопка */
+.button{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    position: absolute;
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+     
+}
+/* Наши преимущества */
+.benefits-list .title{
+color: var(--title-text-color);
+}
+.benefits-list .text{
+    color:var(--primary-text-color);
+}
+.section-title{
+    display: none;
+}
+/* ---------------Чем мы занимаемся------------- */
+
+/* ---------------Наша команда фото------------- */
+.team-foto-list .title{
+    color: var(--title-text-color);
+}
+
+.team-foto-list .text{
+    color: var(--primary-color);
+}
+
+   /* Футер с ссылкой на  контактные данные */
