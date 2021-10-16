@@ -1,3 +1,7 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after{box-sizing: inherit;}
 :root{
   --title-text-color: #212121;
   --primary-color: #757575;
@@ -13,15 +17,19 @@
 .body {
 background-color: var(--primary-bg-color)  
 ;}
-
+/* Шапка */
+.header{
+    background-color: var(--primary-bg-color);
+}
 /* логотип  */
 .logo{
-    color: var(--title-text-color); }  
+    color: var(--accent-color); }  
 
 .logo span{
-    color: var(--accent-color);}
+    color: var(--title-text-color);}
+
     .logo:focus, .logo:hover {
-        color: var(--accent-color);
+        color: var(--accent-color)
     }
  /* ссылки в шапке сайта   */
  .site-nav .link {
@@ -45,11 +53,16 @@ color: var(--primary-text-color);
     color: var(--accent-color); }
     
      /*-------------------------- Основной контент------------------------- */
-/* Герой  */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 2px solid;
+}
 .hero{
     color: var(--title-text-color);
 }
-/* секции */
+/* Наши преимущества */
 .section-title{
     color: var(--title-text-color);
 }
@@ -87,3 +100,5 @@ color: var(--title-text-color);
 }
 
    /* Футер с ссылкой на  контактные данные */
+   .tel-mail-linkk:hover, .tel-mail-linkk:focus{
+    color: var(--accent-color); }
