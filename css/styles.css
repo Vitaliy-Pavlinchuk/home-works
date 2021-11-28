@@ -7,7 +7,9 @@
   --footer-backroung-color: #2f303a;
   --portfolio-btn-accent-color: #f5f4fa;
   --hero-btn-accent-color: #188ce8;
-  --social-imag-color:#AFB1B8
+  --social-imag-color:#AFB1B8;
+  --tr-duration:250ms;
+  --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -84,14 +86,26 @@ body {
   
 }
 /* <!-- ссылки в шапке сайта  --> */
+
+
 .site-nav{
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin-left: 93px;
+
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
+
+.item > .nav-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
 
 .nav-link {
   color: var(--main-title-color);
@@ -99,14 +113,33 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function)
 }
 
 .nav-link:focus,
 .nav-link:hover {
   color: var(--accent-color);
+
 }
 .current {
   color: var(--accent-color);
+}
+
+.current::after{
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px ;
+  background-color: var(--accent-color);
+
 }
 /* Почта и телефон */
 .contacts{
@@ -123,6 +156,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .nav-contacts:hover,
@@ -189,10 +226,12 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
-  
   border: 0;
   border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .btn:hover,
@@ -201,7 +240,7 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  
 }
 
 .btn-hero {
@@ -217,6 +256,15 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+ transition-property: background-color, color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function); 
+}
+/* Делаем кнопку в портфолио current */
+.active {
+  color: var(--current-white-color);
+  background-color: var(--accent-color);
 }
 
 .btn-hero:focus,
@@ -303,6 +351,10 @@ body {
 .foto .item:not(:last-child){
   margin-right: 30px;
 }
+
+.foto > .item{
+  position: relative;
+}
 .title {
   margin: 0 0 50px 0;
   text-align: center;
@@ -312,6 +364,32 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+.images{
+  display: block;
+max-width: 100%;
+height: auto;}
+
+.images-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  
+font-weight: 700;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--current-white-color);
+background-color:rgba(47, 48, 58, 0.8) ;
+
 }
 
 /***** Наша команда фото *****/
@@ -372,7 +450,11 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color:var(--social-imag-color)
+  color:var(--social-imag-color);
+  
+  transition-property: color, background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 .social-item:hover, .social-item:focus {
   color: var(--current-white-color);
@@ -409,6 +491,10 @@ height: 92px;
 color: var(--social-imag-color);
 border: 1px solid var(--social-imag-color);
 border-radius: 4px;
+
+transition-property: color, border;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .client-item:hover, .client-item:focus {
@@ -449,6 +535,10 @@ border-radius: 4px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-contacts:hover,
@@ -495,7 +585,11 @@ height: 44px;
 border-radius: 50%;
   
 color: var(--current-white-color);
-background-color: rgba(255, 255, 255, 0.1);;
+background-color: rgba(255, 255, 255, 0.1);
+
+transition-property: background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .social-item-footer:hover, .social-item-footer:focus{
@@ -507,6 +601,89 @@ width: 20px;
 height: 20px;
 fill: currentColor;
 }
+
+
+/* <!-------- Модальное окно -----> */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity var(--tr-duration) var(--timing-function);
+  
+}
+
+.backdrop.is-hidden{
+  
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+ }
+
+.backdrop.is-hidden .modal{
+  transform:  translate(-50%, -50%) scale(0.6);
+}
+
+.modal{
+  width:528px ;
+  height: 581px;
+
+  background-color: var(--current-white-color);
+  border-radius: 4px;
+
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition-property: transform;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.btn-close-black{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--current-white-color);
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  
+  transition-property: background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
+
+}
+
+.btn-close-black:hover,  .btn-close-black:focus{
+  background-color: var(--accent-color);
+  
+}
+
+.close-black{
+  width:18px ;
+  height:18px ;
+  fill: currentColor;
+}
+
+
+
 /****** -----------------------Портфолио---------------------*****/
 
 /* <!-- Секция фильтры --> */
@@ -563,6 +740,46 @@ margin: 0 0 4px 0;
   letter-spacing: 0.03em;
 }
 
-.cart-work:hover{
+.cart-work{
+  transition-property:box-shadow;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
+
+}
+
+.cart-work:hover, .cart-work:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+/****** анимация синего всплывающие окна ******/
+.card-aside{
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(33, 150, 243, 0.9); 
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
+  
+  padding: 63px 24px;
+  margin: 0;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color:var(--current-white-color);
+}
+
+.cart-work:hover .product-overlay, .cart-work:focus .product-overlay{
+  transform: translateY(0px);
+}
+

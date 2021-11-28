@@ -40,9 +40,9 @@
     <main>
         <section class="section hero">
             <div class="container">
-            <h1 class="hero-title">Эффективные решения <br /> для для вашего бизнеса </h1>
+            <h1 class="hero-title">Эффективные решения  для вашего бизнеса </h1>
 
-            <button class="btn btn-hero" type="button"> Заказать услугу </button>
+            <button class="btn btn-hero "   type="button"  data-modal-open > Заказать услугу </button>
             </div>
             
         </section>
@@ -82,9 +82,15 @@
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
             <ul class="list foto">
-                <li class="item">  <img class="images" src="./images/box-1.jpg" alt="Руки на клавиатуре" width="370"> </li>
-                <li class="item">  <img class="images" src="./images/box-2.jpg" alt="Работа за ноутбуком" width="370"> </li>
-                <li class="item">  <img class="images" src="./images/box-3.jpg" alt="Цветная палитра на планшете " width="370"> </li>
+                <li class="item">  <img class="images" src="./images/box-1.jpg" alt="Руки на клавиатуре" width="370"> 
+                    <p class="images-text" >Десктопные приложения</p>
+                </li>
+                <li class="item">  <img class="images" src="./images/box-2.jpg" alt="Работа за ноутбуком" width="370"> 
+                    <p class="images-text" > Мобильные приложения</p>
+                </li>
+                <li class="item">  <img class="images" src="./images/box-3.jpg" alt="Цветная палитра на планшете " width="370"> 
+                    <p class="images-text" >Дизайнерские решения  </p>
+                </li>
             </ul>
             </div>
         </section>
@@ -209,7 +215,14 @@
             </div>
         </footer>
 
- 
+         <!-- Модальное окно -->
+         <div class="backdrop is-hidden"  data-modal>
+             <div class="modal">
+                 <button class="btn-close-black" data-modal-close > <svg class="close-black" > <use href=./images/icons.svg#close-black  ></use> </svg> </button>
+             </div>
+         </div>
+
+    <script src="./js/modal.js"></script>    
 </body>
 
 </html>
