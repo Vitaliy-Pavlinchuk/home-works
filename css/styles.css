@@ -624,9 +624,9 @@ fill: currentColor;
 }
 
 .btn-foter{
-  background-image: url(/images/paper-airplane.svg);
+  /* background-image: url(/images/paper-airplane.svg);
   background-repeat: no-repeat;
-  background-position: 148px 13px;
+  background-position: 148px 13px; */
   padding-left: 29px;
   text-align: left;
 }
