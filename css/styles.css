@@ -623,15 +623,31 @@ fill: currentColor;
   
 }
 
-.btn-foter{
-  /* background-image: url(/images/paper-airplane.svg);
-  background-repeat: no-repeat;
-  background-position: 148px 13px; */
+.btn-footer{
+  cursor: pointer;
   padding-left: 29px;
   text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
+.btn-text{
+  margin-right: 10px;
+  
 
+}
+
+.social-icon-btn{
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  
+}
 
 /* <!-------- Модальное окно -----> */
 .backdrop{
