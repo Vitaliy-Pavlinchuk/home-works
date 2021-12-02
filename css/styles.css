@@ -900,6 +900,7 @@ transition-timing-function: var(--timing-function);
 
 .agreement{
 color: #2196F3;
+text-decoration-skip-ink: none;
 }
 /****** -----------------------Портфолио---------------------*****/
 
