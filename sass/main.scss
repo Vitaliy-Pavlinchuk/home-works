@@ -1,0 +1,81 @@
+ @import "./utils/variables";
+ @import "./utils/reset";
+ @import "./utils/visually-hidden";
+
+ @import "./components/body";
+ 
+
+ @import "./components/header";
+ @import "./components/logo";
+ @import "./components/site-navigation";
+
+
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+} 
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+//header***************
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+    //почта и телефон
+
+/* Почта и телефон */
+.contacts{
+  display: flex;
+  margin-left: auto;
+  }
+.contacts .item:not(:last-child){
+  margin-right: 50px;
+}
+
+.nav-contacts {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.nav-contacts:hover,
+.nav-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* -------------SVG--------- */
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill:currentColor;
+}
+
+.envelope{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+

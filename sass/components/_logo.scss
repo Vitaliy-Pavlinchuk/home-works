@@ -1,0 +1,21 @@
+.logo{
+    display: block;
+    font-family: Raleway;
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+&--header{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;}
+
+&--styles{
+    color: $main-title-color;}
+
+&--footer{
+    color: $current-white-color;}
+    
+}
