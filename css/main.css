@@ -710,7 +710,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* <!-------- Модальное окно -----> */
 .backdrop {
   z-index: 3;
   position: fixed;
@@ -795,7 +794,6 @@ body {
   fill: currentColor;
 }
 
-/* модальное окно оформление */
 .modal__form {
   text-align: center;
 }
@@ -971,8 +969,6 @@ body {
   text-decoration-skip-ink: none;
 }
 
-/****** -----------------------Портфолио---------------------*****/
-/* <!-- Секция фильтры --> */
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,7 +983,6 @@ body {
   margin-right: 8px;
 }
 
-/* <!-- Секция проекты  --> */
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,7 +1051,6 @@ body {
           transform: translateY(0px);
 }
 
-/****** анимация синего всплывающие окна ******/
 .card-aside {
   position: relative;
   overflow: hidden;

@@ -1,6 +1,6 @@
 
 
-/* <!-------- Модальное окно -----> */
+//Модальное окно 
 .backdrop{
   z-index: 3;
   position: fixed;
@@ -87,7 +87,7 @@ position: absolute;
   fill: currentColor;
 }
 
-/* модальное окно оформление */
+// модальное окно оформление 
 .modal__form{
   text-align: center;
 }
