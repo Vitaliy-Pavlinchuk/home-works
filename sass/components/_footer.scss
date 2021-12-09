@@ -68,9 +68,10 @@ color: $current-white-color;
   display: flex;
   justify-content: center;
 
-&:not(:last-child){
-  margin-right: 10px;}
+
+  
 }
+
 
 
 
@@ -94,9 +95,12 @@ transition-timing-function: $timing-function;
 &:hover, &:focus{
 background-color: $accent-color;
 }
+
 }
 
 
+.foter__social-list:not(:last-child){
+  margin-right: 10px;}
 
 .social-icon {
 width: 20px;
