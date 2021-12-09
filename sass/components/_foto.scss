@@ -1,0 +1,43 @@
+
+//чем мы занимаемся 
+.foto{
+display: flex;
+align-items: center;
+text-align: left;
+}
+
+.foto__item:not(:last-child){
+margin-right: 30px;
+}
+
+.foto__item{
+position: relative;
+}
+
+
+.foto__images{
+display: block;
+max-width: 100%;
+height: auto;}
+
+.foto-text{
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+bottom: 0;
+left: 0;
+
+width: 100%;
+height: 70px;
+
+font-weight: 700;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $current-white-color;
+background-color:rgba(47, 48, 58, 0.8) ;
+
+margin: 0;
+}

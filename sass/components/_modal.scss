@@ -1,0 +1,274 @@
+
+
+/* <!-------- Модальное окно -----> */
+.backdrop{
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $tr-duration $timing-function;
+
+  &.is-hidden .modal{
+  transform:  translate(-50%, -50%) scale(0.6);
+}
+  
+}
+
+.backdrop.is-hidden{
+  
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+ }
+
+
+
+.modal{
+ 
+  max-width:528px ;
+  width: calc(100% - 30px);
+  max-height: 581px;
+  height: calc(100% - 30px);
+
+  background-color: $current-white-color;
+  border-radius: 4px;
+
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 40px;
+
+  transition-property: transform;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+}
+
+.modal__btn-close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0;
+  
+  width: 30px;
+  height: 30px;
+
+  background-color: $current-white-color;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  
+  transition-property: background-color;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+
+&:hover,  &:focus{
+  color: $accent-color;}
+
+}
+
+
+
+.modal__close{
+  width:18px ;
+  height:18px ;
+  fill: currentColor;
+}
+
+/* модальное окно оформление */
+.modal__form{
+  text-align: center;
+}
+
+.modal__title{
+margin: 0 0 12px 0;
+
+font-weight: 700;
+font-size: 20px;
+line-height: calc(23 / 20);
+text-align: center;
+letter-spacing: 0.03em;
+
+color: $main-title-color;
+}
+
+
+.modal__label{
+  display: block;
+  position: relative;
+  color: $main-title-color;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.modal__label-text{
+display: block;
+
+font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.01em;
+
+color: $text-color;
+
+margin-bottom: 4px;
+
+}
+
+.modal__input{
+display: block;
+
+width: 100%;
+height: 40px;
+padding-left: 42px;
+margin-bottom: 10px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+
+transition-property: border;
+transition-duration: $tr-duration;
+transition-timing-function: $timing-function;
+
+&:focus + .modal-icon{
+  fill: $accent-color;
+}
+
+&:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+}
+
+}
+
+.modal-icon{
+  display: block;
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+
+  margin-left: 12px;
+  
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+
+  transition-property: fill  ;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+}
+
+
+
+
+
+
+.textarea__label{
+  margin-bottom: 20px;
+}
+
+.textarea__input{
+  
+  resize: none;
+  margin: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.01em;
+
+
+  &:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+}
+}
+
+.modal__label-checkbox{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+
+.icon{
+  display: inline-block;
+  border: 2px solid $timing-function;
+  border-radius: 4px;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  transition-property: background-color , border;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+} 
+
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+
+    &:checked +  .social__icon-checkbox{
+    margin-right: 7px;  
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color:$accent-color;
+    border: 2px solid $accent-color;}
+}
+
+.social__icon-checkbox {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $main-title-color;
+    border-radius: 4px;
+    background-color: $current-white-color;
+    transition-property: background-color, border;
+    transition-duration: $tr-duration;
+    transition-timing-function: $timing-function;
+}
+
+
+.text__checkbox{
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+  margin: 0;
+}
+
+.modal__agreement{
+color: #2196F3;
+text-decoration-skip-ink: none;
+}
+

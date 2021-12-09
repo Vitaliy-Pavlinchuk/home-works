@@ -1,0 +1,40 @@
+//Постоянные клиенты
+.gerular-clients{
+display: flex;
+justify-content: center;
+max-height: 184px;
+}
+
+.gerular-clients__list:not(:last-child){
+margin-right: 30px;
+}
+
+.gerular-clients__item{
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 170px;
+height: 92px;
+
+color: $social-imag-color;
+border: 1px solid $social-imag-color;
+border-radius: 4px;
+
+transition-property: color, border;
+transition-duration: $tr-duration;
+transition-timing-function: $timing-function;
+
+&:hover, &:focus {
+color: $accent-color;
+border: 1px solid $accent-color;
+}
+
+}
+
+
+.clients{
+width: 106px;
+height: 60px;
+fill: currentColor;
+}

@@ -1,0 +1,69 @@
+//наши-преимущества
+
+
+.features{
+  display: flex;
+  align-items: center;
+  text-align: left;
+   
+
+}
+
+.features__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.features__item{
+ width: 270px;
+}
+.fake-title{
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features__title {
+  margin: 0 0 10px 0;
+
+  color: $main-title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* -SVG-наши-преимущества-*/
+.features__thumb{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  width: 100%;
+  min-height: 120px;
+  border-radius: 4px;
+  background-color:$portfolio-btn-accent-color;
+}
+.antenna, .clock, .diagram, .astronaut{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}

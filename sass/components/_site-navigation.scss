@@ -1,3 +1,11 @@
+//Навигация по сайту в хедере
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
 .site-navigation{
     display: flex;
     align-items: center;
@@ -21,11 +29,13 @@
     transition-property: color;
     transition-duration: $tr-duration;
     transition-timing-function: $timing-function;
+
+    &:focus,
+    &:hover {
+    color: $accent-color;}
 }
 
-.site-navigation__link:focus,
-.site-navigation__link:hover {
-    color: $accent-color;}
+
 
 .current {
     color: $accent-color;

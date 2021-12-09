@@ -3,30 +3,41 @@
  @import "./utils/visually-hidden";
 
  @import "./components/body";
- 
-
+ @import "./components/section";
+ @import "./components/container";
  @import "./components/header";
  @import "./components/logo";
  @import "./components/site-navigation";
+ @import "./components/contacts";
+ @import "./components/hero";
+ @import "./components/btn";
+ @import "./components/features";
+ @import "./components/title";
+ @import "./components/foto";
+ @import "./components/team-carts";
+ @import "./components/gerular-clients";
+ @import "./components/footer";
+ @import "./components/modal";
 
 
-.container{
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-} 
 
-.section{
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
+
 
 //header***************
 
-.nav{
-    display: flex;
-    align-items: center;
-}
+
+
+
+
+/* Герой */
+
+
+/* Кнопки */
+
+/************************** Чем мы занимаемся ****************************/
+
+/***** Наша команда фото *****/
 
 
 
@@ -34,48 +45,111 @@
 
 
 
-    //почта и телефон
 
-/* Почта и телефон */
-.contacts{
+
+
+/****** -----------------------Портфолио---------------------*****/
+
+/* <!-- Секция фильтры --> */
+.filter{
   display: flex;
-  margin-left: auto;
-  }
-.contacts .item:not(:last-child){
-  margin-right: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  & .item:not(:last-child){
+  margin-right: 8px;
 }
-
-.nav-contacts {
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition-property: color;
-  transition-duration: var(--tr-duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.nav-contacts:hover,
-.nav-contacts:focus {
-  color: var(--accent-color);
-}
-
-/* -------------SVG--------- */
-.smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill:currentColor;
-}
-
-.envelope{
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 
+
+/* <!-- Секция проекты  --> */
+.works{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;  
+}
+
+.work__item{
+margin-right: 30px;
+margin-bottom: 30px;
+
+&:nth-child(3n){
+  margin-right: 0px;
+}
+
+&:nth-last-child(-n+3){
+  margin-bottom: 0px;
+}
+}
+
+
+
+.work__title__text{
+  padding: 20px 24px ;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+.work__title {
+margin: 0 0 4px 0;
+
+  color: $main-title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.work__text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.work__cart{
+  transition-property:box-shadow;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+  
+  &:hover, &:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+ &:hover .product__overlay, &:focus .product__overlay{
+  transform: translateY(0px);}
+}
+
+
+
+/****** анимация синего всплывающие окна ******/
+.card-aside{
+  position: relative;
+  overflow: hidden;
+}
+
+.product__overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(33, 150, 243, 0.9); 
+  transform: translateY(101%);
+  transition-property: transform;
+  transition-duration: $tr-duration;
+  transition-timing-function: $timing-function;
+  
+  padding: 63px 24px;
+  margin: 0;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color:$current-white-color;
+
+  
+}
 

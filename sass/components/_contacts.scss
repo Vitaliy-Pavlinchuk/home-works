@@ -1,0 +1,47 @@
+// Почта и телефон 
+.contacts{
+    display: flex;
+}
+.contacts .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contacts__link {
+    @extend %links;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $text-color;
+
+    transition-property: color;
+    transition-duration: $tr-duration;
+    transition-timing-function: $timing-function;
+
+&:hover,
+&:focus {
+    color: $accent-color;
+}
+
+}
+
+
+
+
+
+
+
+/* -------------SVG--------- */
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill:currentColor;
+}
+
+.envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
