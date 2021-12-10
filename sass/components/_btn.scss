@@ -36,7 +36,7 @@
 
 
 .btn__hero {
-    
+    @extend .btn;
     min-width: 200px;
     min-height: 50px;
 
@@ -72,8 +72,8 @@
 
 
 
-.btn-footer{
-  
+.footer__btn{
+  @extend .btn__hero;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -86,14 +86,14 @@
   letter-spacing: 0.06em;
 }
 
-.btn-text{
+.btn__text{
   margin-right: 10px;
   
 
 }
 
 
-.social-icon-btn{
+.social__icon-btn{
   width: 24px;
   height: 24px;
   fill: currentColor;

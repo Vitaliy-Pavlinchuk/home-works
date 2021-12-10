@@ -221,7 +221,7 @@ body {
   text-transform: uppercase;
 }
 
-.btn {
+.btn, .btn__hero, .footer__btn {
   cursor: pointer;
   min-height: 38px;
   padding: 6px 22px;
@@ -245,14 +245,14 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover, .btn:focus {
+.btn:hover, .btn__hero:hover, .footer__btn:hover, .btn:focus, .btn__hero:focus, .footer__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn__hero {
+.btn__hero, .footer__btn {
   min-width: 200px;
   min-height: 50px;
   color: #ffffff;
@@ -271,7 +271,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn__hero:focus, .btn__hero:hover {
+.btn__hero:focus, .footer__btn:focus, .btn__hero:hover, .footer__btn:hover {
   background-color: #188ce8;
 }
 
@@ -281,7 +281,7 @@ body {
   background-color: #2196f3;
 }
 
-.btn-footer {
+.footer__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -300,11 +300,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.btn-text {
+.btn__text {
   margin-right: 10px;
 }
 
-.social-icon-btn {
+.social__icon-btn {
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -418,7 +418,7 @@ body {
   height: auto;
 }
 
-.foto-text {
+.foto__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
