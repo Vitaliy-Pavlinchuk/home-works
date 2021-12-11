@@ -8,16 +8,17 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 24px;}
 
 &--header{
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;}
+    
 
 &--styles{
     color: $main-title-color;}
 
-&--footer{
+&--white{
     color: $current-white-color;}
     
 }
