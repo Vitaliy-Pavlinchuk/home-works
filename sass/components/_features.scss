@@ -1,21 +1,36 @@
 //наши-преимущества
-
-
 .features{
-  display: flex;
-  align-items: center;
-  text-align: left;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  
+}
    
-
+ 
 }
 
-.features__item:not(:last-child){
-  margin-right: 30px;
+
+.features__item {
+  @media screen and (max-width: 767px) {
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
-.features__item{
- width: 270px;
-}
+
+
+
 .fake-title{
   position:absolute;
   width: 1px;

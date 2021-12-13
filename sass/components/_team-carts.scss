@@ -6,12 +6,31 @@
   
 }
 .carts{
-  display: flex;
-  text-align: center;
+text-align: center;
+  @media screen and (min-width:768px){
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: -15px;
+  }
+  
+  
 }
 
-.carts .item:not(:last-child){
-  margin-right: 30px;
+.carts__item{
+  @media screen and (max-width:767px){
+    margin: 15px;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width:768px){
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+
+  @media screen and (min-width:1200px){
+    flex-basis:  calc(100% / 4 - 30px);
+  }
 }
 
 .cart{
