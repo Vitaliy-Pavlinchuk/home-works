@@ -59,6 +59,16 @@ body {
   margin: 0 auto;
 }
 
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -80,21 +90,21 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo--header {
+.logo--position {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.logo--styles {
+.logo--black {
   color: #212121;
 }
 
-.logo--footer {
+.logo--white {
   color: #ffffff;
 }
 
-.navigation {
+.wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +168,7 @@ body {
   display: flex;
 }
 
-.contacts .item:not(:last-child) {
+.contacts .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -221,7 +231,7 @@ body {
   text-transform: uppercase;
 }
 
-.btn, .btn__hero, .footer__btn {
+.btn, .btn__hero, .footer-btn {
   cursor: pointer;
   min-height: 38px;
   padding: 6px 22px;
@@ -245,14 +255,14 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover, .btn__hero:hover, .footer__btn:hover, .btn:focus, .btn__hero:focus, .footer__btn:focus {
+.btn:hover, .btn__hero:hover, .footer-btn:hover, .btn:focus, .btn__hero:focus, .footer-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn__hero, .footer__btn {
+.btn__hero, .footer-btn {
   min-width: 200px;
   min-height: 50px;
   color: #ffffff;
@@ -271,7 +281,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn__hero:focus, .footer__btn:focus, .btn__hero:hover, .footer__btn:hover {
+.btn__hero:focus, .footer-btn:focus, .btn__hero:hover, .footer-btn:hover {
   background-color: #188ce8;
 }
 
@@ -281,7 +291,7 @@ body {
   background-color: #2196f3;
 }
 
-.footer__btn {
+.footer-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -300,11 +310,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.btn__text {
+.btn-text {
   margin-right: 10px;
 }
 
-.social__icon-btn {
+.social-icon-btn {
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -376,7 +386,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.antenna, .clock, .diagram, .astronaut {
+.features__antenna, .features__clock, .features__diagram, .features__astronaut {
   display: block;
   width: 70px;
   height: 70px;
@@ -384,17 +394,14 @@ body {
   margin-left: auto;
 }
 
-.section-title {
+.title {
+  margin: 0 0 50px 0;
   text-align: center;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-}
-
-.section-title--offset {
-  margin: 0 0 50px 0;
 }
 
 .foto {
@@ -421,7 +428,7 @@ body {
   height: auto;
 }
 
-.foto__text {
+.foto-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +496,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* --SVG-наша-команда-фото */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,7 +584,7 @@ body {
   border: 1px solid #2196f3;
 }
 
-.clients {
+.gerular-clients__clients {
   width: 106px;
   height: 60px;
   fill: currentColor;
@@ -846,7 +852,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:focus + .modal-icon {
+.modal__input:focus + .modal__icon {
   fill: #2196f3;
 }
 
@@ -856,7 +862,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-icon {
+.modal__icon {
   display: block;
   position: absolute;
   top: 50%;

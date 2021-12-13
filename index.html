@@ -15,12 +15,12 @@
 <body>
         <header class="header">  
         <!-- Навигация -->
-        <div class="container navigation">
+        <div class="container container--flex">
         
         <!-- Логотип -->
-
-            <a class="link logo logo--header" href="./index.html" lang="en"> Web<span class="logo--styles" >Studio</span> </a>
-        <nav class="navigation">
+        <nav class="wrap">
+            <a class="link logo logo--position" href="./index.html" lang="en"> Web<span class="logo--black" >Studio</span> </a>
+        
             <!-- ссылки в шапке сайта  -->
             <ul class="list site-navigation">
                 <li class="site-navigation__item"> <a class="link site-navigation__link current" href="./index.html">Студия  </a></li>
@@ -30,8 +30,8 @@
         </nav>
         <ul class="list contacts">
             <!-- Почта и телефон -->
-            <li class="item" > <a  class="link contacts__link" href="mailto:info@devstudio.com"> <svg class="envelope"> <use href=./images/icons.svg#envelope></use> </svg> info@devstudio.com</a></li>
-            <li class="item"> <a class="link contacts__link" href="tel:+380961111111"> <svg class="smartphone"> <use href=./images/icons.svg#smartphone ></use> </svg> +38 096 111 11 11</a></li>
+            <li class="contacts__item" > <a  class="link contacts__link" href="mailto:info@devstudio.com"> <svg class="envelope"> <use href=./images/icons.svg#envelope></use> </svg> info@devstudio.com</a></li>
+            <li class="contacts__item"> <a class="link contacts__link" href="tel:+380961111111"> <svg class="smartphone"> <use href=./images/icons.svg#smartphone ></use> </svg> +38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
@@ -42,7 +42,7 @@
             <div class="container ">
             <h1 class="hero__title">Эффективные решения  для вашего бизнеса </h1>
 
-            <button class="btn__hero"   type="button"  data-modal-open > Заказать услугу </button>
+            <button class="btn__hero  "   type="button"  data-modal-open > Заказать услугу </button>
             </div>
             
         </section>
@@ -54,22 +54,22 @@
             <div class="container">
                 <ul class="list features">
                 <li class="features__item">
-                    <div class="features__thumb"> <svg   class="antenna" > <use  href=./images/icons.svg#antenna  ></use> </svg></div>
+                    <div class="features__thumb"> <svg   class="features__antenna" > <use  href=./images/icons.svg#antenna  ></use> </svg></div>
                     <h3 class="features__title">Внимание к деталям</h3>
                     <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="features__item">
-                    <div class="features__thumb"> <svg class="clock"> <use href=./images/icons.svg#clock></use> </svg> </div>
+                    <div class="features__thumb"> <svg class="features__clock"> <use href=./images/icons.svg#clock></use> </svg> </div>
                     <h3 class="features__title">Пунктуальность</h3>
                     <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="features__item">
-                    <div class="features__thumb"> <svg class="diagram"> <use href=./images/icons.svg#diagram></use> </svg> </div>
+                    <div class="features__thumb"> <svg class="features__diagram"> <use href=./images/icons.svg#diagram></use> </svg> </div>
                     <h3 class="features__title">Планирование</h3>
                     <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="features__item">
-                    <div class="features__thumb"> <svg class="astronaut"> <use href=./images/icons.svg#astronaut></use> </svg> </div>
+                    <div class="features__thumb"> <svg class="features__astronaut"> <use href=./images/icons.svg#astronaut></use> </svg> </div>
                     <h3 class="features__title">Современные технологии</h3>
                     <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -80,16 +80,16 @@
         <!-- Чем мы занимаемся -->
         <section class="section section-not-padding-top">
             <div class="container">
-                <h2 class="section-title section-title--offse">Чем мы занимаемся</h2>
+                <h2 class="title">Чем мы занимаемся</h2>
             <ul class="list foto">
                 <li class="foto__item">  <img class="foto__images" src="./images/box-1.jpg" alt="Руки на клавиатуре" width="370"> 
-                    <p class="foto__text" >Десктопные приложения</p>
+                    <p class="foto-text" >Десктопные приложения</p>
                 </li>
                 <li class="foto__item">  <img class="foto__images" src="./images/box-2.jpg" alt="Работа за ноутбуком" width="370"> 
-                    <p class="foto__text" > Мобильные приложения</p>
+                    <p class="foto-text" > Мобильные приложения</p>
                 </li>
                 <li class="foto__item">  <img class="foto__images" src="./images/box-3.jpg" alt="Цветная палитра на планшете " width="370"> 
-                    <p class="foto__text" >Дизайнерские решения  </p>
+                    <p class="foto-text" >Дизайнерские решения  </p>
                 </li>
             </ul>
             </div>
@@ -98,12 +98,12 @@
         <!-- Наша команда фото -->
         <section class="section section-team-carts">
             <div class="container">
-                <h2 class="section-title section-title--offset">Наша команда</h2>
+                <h2 class="title">Наша команда</h2>
             
                 <ul class="list carts">
                 <li class="item">
                     <div class="cart">
-                    <img class="cart__images" src="./images/Foto-1.jpg" alt="Фото Игорь Демьяненко" width="270">
+                    <img class="cart__images"  src="./images/Foto-1.jpg" alt="Фото Игорь Демьяненко" width="270">
                         <div class="cart__body">
                         <h3 class="carts__title">Игорь Демьяненко</h3>
                         <p class="carts__text" lang="en">Product Designer</p>
@@ -170,14 +170,14 @@
         <!------------------ Постоянные клиенты------------->
         <section class="section">
             <div class="container">
-                <h2 class="section-title section-title--offse">Постоянные клиенты</h2>
+                <h2 class="title">Постоянные клиенты</h2>
                 <ul class="list gerular-clients">
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-1></use> </svg></a> </li>
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-2></use> </svg></a>  </li>
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-3></use> </svg></a> </li>
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-4></use> </svg></a> </li>
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-5></use> </svg></a> </li>
-                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="clients"> <use href=./images/icons.svg#logo-6></use> </svg></a> </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-1></use> </svg></a> </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-2></use> </svg></a>  </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-3></use> </svg></a> </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-4></use> </svg></a> </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-5></use> </svg></a> </li>
+                    <li class="gerular-clients__list"> <a class="gerular-clients__item" href=""><svg class="gerular-clients__clients"> <use href=./images/icons.svg#logo-6></use> </svg></a> </li>
                 </ul>
 
             </div>
@@ -216,7 +216,7 @@
                     <label>
                         <p class="footer__social-text">Подпишитесь на рассылку</p>
                         <input class="footer__e-mail-inpup" type="email" name="e-mail" placeholder="E-mail" >
-                        <button class=" footer__btn" type="submit"><span class="btn__text"  >Подписаться</span>  <svg class="social__icon-btn" > <use href=./images/icons.svg#paper-airplane  width="24" height="24" ></use> </svg> </button>
+                        <button class="footer-btn" type="submit"><span class="btn-text"  >Подписаться</span>  <svg class="social-icon-btn" > <use href=./images/icons.svg#paper-airplane  width="24" height="24" ></use> </svg> </button>
 
                     </label>
                 </form>      
@@ -233,19 +233,19 @@
                     <label class="modal__label">
                         <span class="modal__label-text">Имя</span>
                         <input class="modal__input" type="text" name="name" />
-                        <svg class="modal-icon" > <use href=./images/icons.svg#person-black ></use> </svg>
+                        <svg class="modal__icon" > <use href=./images/icons.svg#person-black ></use> </svg>
                     </label>
 
                     <label class="modal__label">
                         <span class="modal__label-text"> Телефон </span>
                         <input class="modal__input" type="tel" name="phone"/>
-                        <svg class="modal-icon" > <use href=./images/icons.svg#phone-black></use> </svg>
+                        <svg class="modal__icon" > <use href=./images/icons.svg#phone-black></use> </svg>
                     </label>
 
                     <label class="modal__label">
                         <span class="modal__label-text"> Почта</span>
                         <input class="modal__input" type="email" name="email">
-                        <svg class="modal-icon" > <use href=./images/icons.svg#email-black></use> </svg>
+                        <svg class="modal__icon" > <use href=./images/icons.svg#email-black></use> </svg>
                     </label>
 
                     <label class="modal__label textarea__label ">

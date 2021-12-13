@@ -142,7 +142,7 @@ transition-property: border;
 transition-duration: $tr-duration;
 transition-timing-function: $timing-function;
 
-&:focus + .modal-icon{
+&:focus + .modal__icon{
   fill: $accent-color;
 }
 
@@ -154,7 +154,7 @@ transition-timing-function: $timing-function;
 
 }
 
-.modal-icon{
+.modal__icon{
   display: block;
   position: absolute;
 

@@ -2,7 +2,7 @@
 .contacts{
     display: flex;
 }
-.contacts .item:not(:last-child){
+.contacts .contacts__item:not(:last-child){
     margin-right: 50px;
 }
 

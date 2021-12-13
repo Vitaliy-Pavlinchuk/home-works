@@ -1,5 +1,5 @@
-.section-title {
-  
+.title {
+  margin: 0 0 50px 0;
   text-align: center;
 
   color: #212121;
@@ -7,10 +7,4 @@
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-
-  &--offset {
-    margin: 0 0 50px 0;
-  }
 }
-
-

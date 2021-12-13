@@ -72,7 +72,7 @@
 
 
 
-.footer__btn{
+.footer-btn{
   @extend .btn__hero;
   display: inline-flex;
   align-items: center;
@@ -86,14 +86,14 @@
   letter-spacing: 0.06em;
 }
 
-.btn__text{
+.btn-text{
   margin-right: 10px;
   
 
 }
 
 
-.social__icon-btn{
+.social-icon-btn{
   width: 24px;
   height: 24px;
   fill: currentColor;
