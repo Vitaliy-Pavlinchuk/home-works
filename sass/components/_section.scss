@@ -4,7 +4,16 @@
 }
 
 .section-not-padding-top{
+@media screen and (min-width: 1200px){
 padding-top: 0;
+}
+
+
+
+@media screen and (max-width: 1199px)
+{
+  display: none;
+}
 }
 
 .section-team-carts{
