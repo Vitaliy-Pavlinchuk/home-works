@@ -795,8 +795,22 @@ body {
   }
 }
 
-.footer__navigation {
-  margin-right: 70px;
+@media screen and (max-width: 767px) {
+  .footer__navigation {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__navigation {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__navigation {
+    margin-right: 70px;
+  }
 }
 
 .footer__social-text {
