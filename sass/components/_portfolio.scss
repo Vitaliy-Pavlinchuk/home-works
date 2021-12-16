@@ -15,23 +15,40 @@
 
 // Секция проекты  
 .works{
+  @media screen and (min-width:768px){
   display:flex;
   flex-wrap: wrap;
-  align-items: center;  
+  margin: -15px;
+}
 }
 
 .work__item{
-margin-right: 30px;
-margin-bottom: 30px;
+  @media  screen and (min-width:768px) {
+  margin: 15px;
+  flex-basis: calc(100% / 2 - 30px);
+  }
 
-&:nth-child(3n){
-  margin-right: 0px;
+  @media  screen and (min-width:1200px) {
+  margin: 15px;
+  flex-basis: calc(100% / 3 - 30px);
+  }
+  
+  
+  
 }
 
-&:nth-last-child(-n+3){
-  margin-bottom: 0px;
-}
-}
+// .work__item{
+// margin-right: 30px;
+// margin-bottom: 30px;
+
+// &:nth-child(3n){
+//   margin-right: 0px;
+// }
+
+// &:nth-last-child(-n+3){
+//   margin-bottom: 0px;
+// }
+// }
 
 
 
