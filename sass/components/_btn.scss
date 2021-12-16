@@ -92,7 +92,6 @@
 
 }
 
-
 .social-icon-btn{
   width: 24px;
   height: 24px;
@@ -101,3 +100,17 @@
 }
 
 
+//  TEST
+
+.menu-batton{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+ 
+}
+
+.menu-batton .icon-cross {
+  display: none;
+}

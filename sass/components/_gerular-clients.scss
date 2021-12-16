@@ -5,8 +5,8 @@
 display: flex;
 flex-wrap: wrap;
 margin: -15px;
-
-max-height: 184px;
+@media screen and (min-width:1200px){
+max-height: 184px;   }
 }
 
 .gerular-clients__list{

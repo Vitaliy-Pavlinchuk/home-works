@@ -107,13 +107,20 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
   .menu__wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-right: auto;
   }
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .header {
@@ -266,16 +273,29 @@ body {
 }
 
 .hero__title {
-  width: 696px;
-  height: 120px;
-  margin: 0 auto 30px;
-  padding: 0;
   color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 84px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    height: 120px;
+    margin: 0 auto 30px;
+    padding: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .btn, .btn__hero, .footer-btn {
@@ -365,6 +385,20 @@ body {
   width: 24px;
   height: 24px;
   fill: currentColor;
+}
+
+.menu-batton {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-batton .icon-cross {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -642,7 +676,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
-  max-height: 184px;
+}
+
+@media screen and (min-width: 1200px) {
+  .gerular-clients {
+    max-height: 184px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -702,7 +741,14 @@ body {
 /***------------------ Футер с ссылкой на  контактные данные ------------***/
 .footer {
   padding: 60px 0;
+  margin: 0 auto;
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 /* Адрес */
@@ -738,13 +784,15 @@ body {
 }
 
 /* ******** SVG************ */
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__navigation {
@@ -762,6 +810,12 @@ body {
 }
 
 /* После ПРИСОЕДИНЯЙТЕСЬ */
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-left: 93px;
+  }
+}
+
 .foter__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,10 +863,6 @@ body {
 }
 
 /* Подпишитесь на рассылку */
-.footer__form {
-  margin-left: 93px;
-}
-
 .footer__e-mail-inpup {
   min-width: 358px;
   height: 50px;

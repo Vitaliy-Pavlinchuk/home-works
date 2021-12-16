@@ -1,5 +1,4 @@
 .container{
-  // width: 1200px;
   min-width: 200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -32,12 +31,19 @@
 
 .menu__wrapper{
   display: flex;
-  @media screen and (min-width:769px){
+  @media screen and (min-width:767px){
   align-items: center;
   margin-right: auto;
   }
   
+}
 
+
+.menu-container{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 
