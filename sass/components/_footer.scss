@@ -150,11 +150,22 @@ fill: currentColor;
 
 
 .footer__e-mail-inpup{
-  margin-bottom: 20px;
 
-  min-width: 358px;
+  @media screen and (min-width: 768px){
+    width: 450px;
+    margin-right: 12px;
+  }
+  
+  @media screen and (min-width: 1200px){
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  margin-bottom: 20px;
+  width: 100%;
+  
   height: 50px;
-  margin-right: 12px;
+  
 
   font-size: 16px;
   line-height: calc(20 / 16);
