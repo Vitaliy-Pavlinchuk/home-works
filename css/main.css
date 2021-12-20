@@ -175,7 +175,7 @@ body {
 
 .mob-menu-contacts__link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -190,6 +190,12 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .logo {
@@ -559,7 +565,7 @@ body {
   fill: currentColor;
 }
 
-.menu-batton {
+.close-menu-batton {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -587,12 +593,49 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-batton {
+  .close-menu-batton {
     display: none;
   }
 }
 
-.menu-batton:hover, .menu-batton:focus {
+.close-menu-batton:hover, .close-menu-batton:focus {
+  color: #2196f3;
+}
+
+.open-menu-batton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu-batton {
+    display: none;
+  }
+}
+
+.open-menu-batton:hover, .open-menu-batton:focus {
   color: #2196f3;
 }
 
