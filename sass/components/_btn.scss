@@ -103,6 +103,9 @@
 //  TEST
 
 .menu-batton{
+  @media screen and (min-width:768px)
+  {display: none;}
+
   display: inline-flex;
   margin: 0;
   padding: 0;
