@@ -23,10 +23,40 @@
             <a class="link logo logo--position" href="./index.html" lang="en"> Web<span class="logo--black" >Studio</span> </a>
                        <!-- ТЕСТ!!!!!!!!!!!!!!!!!! -->
             <button type="button" class="menu-batton" aria-label="переключатель мобильного меню">
-               <svg class="icon-cross" width ="24" height ="16" >  <use href=./images/icons.svg#close_40px></use> </svg>
-               <svg class="icon-menu" width ="18" height ="18"> <use href=./images/icons.svg#menu_40px ></use> </svg>
+                <svg class="icon-menu" width ="40" height ="40"> <use href=./images/icons.svg#menu_40px ></use> </svg>
             </button>
+                         <!--------- Mobile-modal !!!!!!-->
+            <div class="mob-menu">
+                <div class="container">
+               <div class="mob-menu__top">
+                    <button type="button" class="menu-batton">
+                    <svg class="icon-cross" width ="40" height ="40" >  <use href=./images/icons.svg#close_40px></use> </svg>
+                </button>
+            <ul class="list mob-menu-list">
+                <li class="mob-menu__item"> <a class="link mob-menu__link current" href="./index.html">Студия  </a></li>
+                <li class="mob-menu__item"> <a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu__item"> <a class="link mob-menu__link" href="">Контакты</a></li>
+            </ul>
+               </div >
+                    <!-- Почта и телефон -->
+            <div class="mob-menu__botton">
+                <ul class="list mob-menu-contacts">
+            
+            <li class="mob-menu-contacts__item" > <a  class="link mob-menu-contacts__link " href="mailto:info@devstudio.com">+38 096 111 11 11  </a></li>
+            <li class="mob-menu-contacts__item"> <a class="link mob-menu-contacts__link-mail" href="tel:+380961111111">info@devstudio.com  </a></li>
+            </ul>
 
+            <ul class="list mob-menu-social">
+                <li class="mob-menu-social__item"> <a class="link mob-menu-social__link" href="#">Instagram </a> </li>
+                <li class="mob-menu-social__item"> <a class="link mob-menu-social__link" href="#">Twitter </a> </li>
+                <li class="mob-menu-social__item"> <a class="link mob-menu-social__link" href="#">Facebook </a> </li>
+                <li class="mob-menu-social__item"> <a class="link mob-menu-social__link" href="#">LinkedIn </a> </li>
+            </ul>
+            </div>
+                </div>
+
+            </div>
+                           <!----------- END-test ----------->
         <div class="menu-container" id="menu-container">
                 <!-- ссылки в шапке сайта  -->
             <ul class="list site-navigation">
