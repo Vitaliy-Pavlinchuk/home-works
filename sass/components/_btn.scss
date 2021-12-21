@@ -4,6 +4,7 @@
 
 
 .btn {
+
   cursor: pointer;
   min-height: 38px;
   padding: 6px 22px;
@@ -129,7 +130,6 @@
 
 &:hover,  &:focus{
   color: $accent-color;}
-
 }
 
 .open-menu-batton{
@@ -137,8 +137,8 @@
   {display: none;}
 
   position: absolute;
-   top: 10px;
-   right: 10px;
+  top: 10px;
+  right: 10px;
 
   display: flex;
   justify-content: center;
@@ -159,15 +159,10 @@
 
 &:hover,  &:focus{
   color: $accent-color;}
-
 }
   
- 
-
-
- .icon-cross {
-   display: block;
- 
+.icon-cross {
+  fill: currentColor;
 }
 
 .icon-menu{

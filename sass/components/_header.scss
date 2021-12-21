@@ -16,16 +16,20 @@
 
 //TEST.................
 .mob-menu{
+    
+    
     position: fixed;
     background-color: $current-white-color;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 99;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -34,6 +38,8 @@
 
 }
 }
+
+
 
 .mob-menu__item{
 
@@ -66,27 +72,69 @@ font-weight: 500;
 font-size: 8vw;
 line-height: calc(40 / 34);
 letter-spacing: 0.02em;
-color: #2196F3;
+color: #757575;
 display: block;
 margin-bottom: 32px;
   
+transition-property: color;
+transition-duration: $tr-duration;
+transition-timing-function: $timing-function;
+
+&:hover, &:focus{
+    color: $accent-color;
+}
+
 }
 
 .mob-menu-contacts__link-mail{
 font-weight: 500;
-font-size: 24px;
+font-size: 6vw;
 line-height: calc(28 / 24);
 letter-spacing: 0.02em;
 
 color: #757575;
 display: block;
 
+transition-property: color;
+transition-duration: $tr-duration;
+transition-timing-function: $timing-function;
+
+&:hover, &:focus{
+    color: $accent-color;
+}
 
 }
 
-.is-hidden{
-  
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
- }
+.is-hidden{  
+pointer-events: none;
+visibility: hidden;
+opacity: 0;
+}
+
+.mob-menu-social{
+display: flex;
+}
+
+.mob-menu-social__link{
+font-size: 18px;
+line-height: calc(22 / 18);
+letter-spacing: 0.02em;
+
+color:$accent-color;
+padding-right: 10px;
+padding-left: 10px;
+
+
+
+}
+
+.mob-menu-social__item + .mob-menu-social__item::before {
+content: "";
+border-right:  1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg);
+}
+
+
+.mob-current{
+    color: $accent-color;
+}

@@ -130,7 +130,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 99;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -178,24 +178,70 @@ body {
   font-size: 8vw;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #757575;
   display: block;
   margin-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-contacts__link:hover, .mob-menu-contacts__link:focus {
+  color: #2196f3;
 }
 
 .mob-menu-contacts__link-mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 6vw;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-contacts__link-mail:hover, .mob-menu-contacts__link-mail:focus {
+  color: #2196f3;
 }
 
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+}
+
+.mob-menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mob-menu-social__link {
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mob-menu-social__item + .mob-menu-social__item::before {
+  content: "";
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mob-current {
+  color: #2196f3;
 }
 
 .logo {
@@ -640,7 +686,7 @@ body {
 }
 
 .icon-cross {
-  display: block;
+  fill: currentColor;
 }
 
 .icon-menu {
@@ -1467,6 +1513,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -1482,6 +1530,14 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc(100% - 30px);
+        flex-basis: calc(100% - 30px);
   }
 }
 
