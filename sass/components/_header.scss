@@ -14,10 +14,8 @@
 }
 
 
-//TEST.................
+// MOBILE-MODALKA!!!!!!!!!!!!!!!!!!!!!!
 .mob-menu{
-    
-    
     position: fixed;
     background-color: $current-white-color;
     width: 100vw;
@@ -113,6 +111,7 @@ opacity: 0;
 
 .mob-menu-social{
 display: flex;
+flex-wrap: wrap;
 }
 
 .mob-menu-social__link{
@@ -132,6 +131,7 @@ padding-left: 10px;
 content: "";
 border-right:  1px solid rgba(33, 33, 33, 0.2);
 transform: rotate(90deg);
+
 }
 
 
