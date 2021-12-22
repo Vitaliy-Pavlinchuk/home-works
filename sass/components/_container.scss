@@ -3,12 +3,7 @@
   padding: 0 15px;
   margin: 0 auto;
 
-  &--flex{
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
+  
   &--header{
     min-width: 200px;
     padding: 0 15px;
@@ -28,6 +23,13 @@
 }
   
 } 
+
+
+.container-flex{
+  display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
 
 .menu__wrapper{
