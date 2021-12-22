@@ -647,7 +647,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (mi-width: 767px) {
+@media screen and (min-width: 768px) {
   .close-menu-batton {
     display: none;
   }
@@ -684,7 +684,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .open-menu-batton {
     display: none;
   }
