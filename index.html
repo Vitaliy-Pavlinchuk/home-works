@@ -21,7 +21,7 @@
         <!-- Логотип -->
         <nav class="menu__wrapper">
             <a class="link logo logo--position" href="./index.html" lang="en"> Web<span class="logo--black" >Studio</span> </a>
-                    <!-- ТЕСТ!!!!!!!!!!!!!!!!!! -->
+            
             <button type="button" class="open-menu-batton" aria-label="переключатель мобильного меню">
                 <svg class="icon-menu" width ="40" height ="40"> <use href=./images/icons.svg#menu_40px ></use> </svg>
             </button>
@@ -56,9 +56,11 @@
                 </div>
 
             </div>
-                           <!----------- END-test ----------->
-        <div class="menu-container" id="menu-container">
-                <!-- ссылки в шапке сайта  -->
+                        <!-- End-modalka -->
+
+                        
+        <div class="menu-container">
+                    <!-- Навигация -->
             <ul class="list site-navigation">
                 <li class="site-navigation__item"> <a class="link site-navigation__link current" href="./index.html">Студия  </a></li>
                 <li class="site-navigation__item"> <a class="link site-navigation__link" href="./portfolio.html">Портфолио</a></li>
@@ -127,7 +129,7 @@
                     <img class="foto__images" 
                     srcset="./images/box-1-x2.jpg   2x,
                             ./images/box-1.jpg      1x "
-                    src="./images/box-1.jpg" alt="Руки на клавиатуре" width="370">
+                    src="./images/box-1.jpg" alt="Руки на клавиатуре" >
 
                     <p class="foto-text" >Десктопные приложения</p>
                 </li>
@@ -135,7 +137,7 @@
                     <img class="foto__images"
                     srcset="./images/box-2-x2.jpg    2x,
                             ./images/box-2.jpg       1x " 
-                    src="./images/box-2.jpg" alt="Работа за ноутбуком" width="370"> 
+                    src="./images/box-2.jpg" alt="Работа за ноутбуком" > 
                     
                     <p class="foto-text" > Мобильные приложения</p>
                 </li>
@@ -143,7 +145,7 @@
                     <img class="foto__images"
                     srcset="./images/box-3-x2.jpg    2x,
                             ./images/box-3.jpg       1x "
-                    src="./images/box-3.jpg" alt="Цветная палитра на планшете " width="370"> 
+                    src="./images/box-3.jpg" alt="Цветная палитра на планшете " > 
                     <p class="foto-text" >Дизайнерские решения  </p>
                 </li>
             </ul>
@@ -158,10 +160,21 @@
                 <ul class="list carts">
                 <li class="carts__item">
                     <div class="cart">
-                    <img class="cart__images"  
-                    srcset="./images/Foto-1.jpg      1x,
-                            ./images/foto-1-x2.jpg   2x"
-                    src="./images/Foto-1.jpg" alt="Фото Игорь Демьяненко" width="270">
+                        <picture>
+                            <source
+                            srcset="./images/foto-1.jpg      1x,
+                                    ./images/foto-1-x2.jpg   2x"
+                            media="(min-width: 1200px)">
+                            <source
+                            srcset="./images/foto-tablet-1.jpg     1x,
+                                    ./images/foto-tablet-1-x2.jpg  2x"
+                            media="(min-width:768px)">
+                            <source
+                            srcset="./images/foto-mobile-1.jpg      1x,
+                                    ./images/foto-mobile-1-x2.jpg   2x"
+                            media="(min-width:767px)">
+                            <img class="cart__images" src="./images/foto-1.jpg" alt="Фото Игорь Демьяненко">
+                        </picture>
                         <div class="cart__body">
                         <h3 class="carts__title">Игорь Демьяненко</h3>
                         <p class="carts__text" lang="en">Product Designer</p>
@@ -177,10 +190,21 @@
                 </li>
                 <li class="carts__item">
                     <div class="cart">
-                    <img class="cart__images" 
-                    srcset="./images/Foto-2.jpg      1x,
-                            ./images/foto-2-x2.jpg   2x"
-                    src="./images/Foto-2.jpg" alt="Фото Ольга Репина" width="270">
+                        <picture>
+                            <source
+                            srcset="./images/foto-2.jpg      1x,
+                                    ./images/foto-2-x2.jpg   2x"
+                            media="(min-width: 1200px)">
+                            <source
+                            srcset="./images/foto-tablet-2.jpg     1x,
+                                    ./images/foto-tablet-2-x2.jpg  2x"
+                            media="(min-width:768px)">
+                            <source
+                            srcset="./images/foto-mobile-2.jpg      1x,
+                                    ./images/foto-mobile-2-x2.jpg   2x"
+                            media="(min-width:767px)">
+                            <img class="cart__images" src="./images/foto-2.jpg" alt="Фото Ольга Репина" >
+                        </picture>
                         <div class="cart__body">
                         <h3 class="carts__title">Ольга Репина</h3>
                         <p class="carts__text" lang="en">Frontend Developer</p>
@@ -195,10 +219,21 @@
                 </li>
                 <li class="carts__item">
                     <div class="cart">
-                    <img class="cart__images" 
-                    srcset="./images/Foto-3.jpg      1x,
-                            ./images/foto-3-x2.jpg   2x"
-                    src="./images/Foto-3.jpg" alt="Фото Николай Тарасов" width="270">
+                        <picture>
+                            <source
+                            srcset="./images/foto-3.jpg      1x,
+                                    ./images/foto-3-x2.jpg   2x"
+                            media="(min-width: 1200px)">
+                            <source
+                            srcset="./images/foto-tablet-3.jpg     1x,
+                                    ./images/foto-tablet-3-x2.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source
+                            srcset="./images/foto-mobile-3.jpg      1x,
+                                    ./images/foto-mobile-3-x2.jpg   2x"
+                            media="(min-width:767px)">             
+                            <img class="cart__images" src="./images/foto-3.jpg" alt="Фото Николай Тарасов" >
+                        </picture>
                         <div class="cart__body">
                         <h3 class="carts__title">Николай Тарасов</h3>
                         <p class="carts__text" lang="en">Marketing</p>
@@ -213,10 +248,21 @@
                 </li>
                 <li class="carts__item">
                     <div class="cart">
-                    <img class="cart__images" 
-                    srcset="./images/Foto-4.jpg      1x,
-                            ./images/foto-4-x2.jpg   2x"
-                    src="./images/Foto-4.jpg" alt="Фото Михаил Ермаков" width="270">
+                        <picture>
+                            <source
+                            srcset="./images/foto-4.jpg      1x,
+                                    ./images/foto-4-x2.jpg   2x"
+                            media="(min-width: 1200px)">
+                            <source
+                            srcset="./images/foto-tablet-4.jpg     1x,
+                                    ./images/foto-tablet-4-x2.jpg  2x"
+                            media="(min-width:768px)">
+                            <source
+                            srcset="./images/foto-mobile-4.jpg      1x,
+                                    ./images/foto-mobile-4-x2.jpg   2x"
+                            media="(min-width:767px)">
+                            <img class="cart__images" src="./images/foto-4.jpg" alt="Фото Михаил Ермаков" >
+                        </picture>
                         <div class="cart__body">
                         <h3 class="carts__title">Михаил Ермаков</h3>
                         <p  class="carts__text" lang="en"> UI Designer</p>
@@ -255,7 +301,7 @@
     <footer class="footer">
             <div class="container ">
                 <div class="footer__tablet">
-                         <div class="footer__navigation">
+                        <div class="footer__navigation">
                 <!-- Логотип -->
                 <a class="link logo" href="./index.html" lang="en"> Web<span class="logo--white">Studio</span> </a>
             
@@ -329,7 +375,7 @@
                     </label>
 
                     <button class="btn btn__hero" type="submit"> Отправить </button>
-                       
+                    
                 </form>    
                  
             </div>

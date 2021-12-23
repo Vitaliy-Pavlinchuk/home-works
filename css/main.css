@@ -23,6 +23,12 @@
   letter-spacing: 0.02em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .fake-title {
   position: absolute;
   width: 1px;
@@ -279,7 +285,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    margin-right: 88px;
+    margin-bottom: 20px;
   }
 }
 
@@ -769,6 +775,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
 .features__text {
   margin: 0;
   padding: 0;
@@ -1125,7 +1137,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__tablet {
-    text-align: center;
     margin-bottom: 0;
     margin-right: auto;
   }
@@ -1160,9 +1171,17 @@ body {
 }
 
 /* После ПРИСОЕДИНЯЙТЕСЬ */
+@media screen and (min-width: 768px) {
+  .footer__form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__form {
     margin-left: 93px;
+    max-width: 600px;
   }
 }
 
@@ -1230,8 +1249,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__e-mail-inpup {
-    width: 450px;
-    margin-right: 12px;
+    width: 100%;
   }
 }
 

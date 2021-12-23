@@ -46,7 +46,6 @@
 /* ******** SVG************ */
 
 
-   
 @media screen and (min-width:1200px){
 .footer  .container{
   display: flex;
@@ -66,7 +65,7 @@
     }
 
     @media screen and (min-width:1200px) {
-    text-align: center;
+    
     margin-bottom: 0;
     margin-right: auto;
     }
@@ -84,6 +83,7 @@
 
 
 .footer__social-text{
+
 margin-bottom: 20px;
 font-weight: 700;
 font-size: 14px;
@@ -97,10 +97,15 @@ color: $current-white-color;
 
 
 .footer__form{
+
+@media screen and (min-width:768px){
+max-width: 450px;
+margin: 0 auto;}
+
 @media screen and (min-width:1200px){
- margin-left: 93px;}
-
-
+margin-left: 93px;
+max-width: 600px;
+}
 }
 
 .foter__list{
@@ -149,11 +154,13 @@ fill: currentColor;
 /* Подпишитесь на рассылку */
 
 
+
+
 .footer__e-mail-inpup{
 
   @media screen and (min-width: 768px){
-    width: 450px;
-    margin-right: 12px;
+  width: 100%;
+  
   }
   
   @media screen and (min-width: 1200px){
